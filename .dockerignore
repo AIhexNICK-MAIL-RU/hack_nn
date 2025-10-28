@@ -1,0 +1,16 @@
+.venv
+__pycache__
+.pytest_cache
+*.log
+*.tmp
+node_modules
+dist
+build
+.DS_Store
+.git
+.gitignore
+catalogs
+dataset
+demo
+*.xlsx
+
