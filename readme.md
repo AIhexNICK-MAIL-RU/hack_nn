@@ -153,3 +153,8 @@ streamlit run ui/app.py
 - GigaChat вызовы заглушены при отсутствии `GIGACHAT_API_KEY`.
 - Каталоги читаются из директории `catalogs/*.xlsx` (минимальная схема).
 - Логика сопоставления параметров находится в `app/services/matching.py`.
+
+Быстрый запуск веб-сервиса одной командой:
+```bash
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
