@@ -1,3 +1,14 @@
+Добавил Gradio UI (ui/gradio_app.py) с загрузкой Excel, запуском извлечения ТХ, сопоставлением и ранжированием.
+Реализовал простую обучаемую модель (Siamese-like MLP на sklearn) с app/ml/model.py и app/ml/train.py.
+Установил зависимости совместимые с Python 3.9.
+Как запустить Gradio:
+source .venv/bin/activate
+python ui/gradio_app.py
+
+Опционально обучить модель:
+source .venv/bin/activate
+python -m app.ml.train  # читает dataset/train.xlsx, сохраняет artifacts/mlp_model.joblib
+
 ТРЕК 1: ПОДБОР АНАЛОГОВ НА ПРОДУКЦИЮ КОНКУРЕНТОВ ПО ОПИСАНИЮ И ТЕХНИЧЕСКИМ ХАРАКТЕРИСТИКАМ
 Задача
 Решение, позволяющее автоматизировать процесс подбора продукции Систэм Электрик по входящим запросам на коммерческие предложения.
